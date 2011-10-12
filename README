@@ -1,0 +1,47 @@
+# Copyright (C) 2011  Gideon Barton
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+
+As the name implies this rotator is not for those needing a massive amount of functionality.
+This script does one thing, rotates 4 images, with user supplied easing and duration.
+
+Example usage:
+All that is needed to use this script is an image in a div with the appropriate css.
+From there simply include the script and call the function with the easing and duration
+of your choice. Please note this script does require both jQuery (for selection) and jQueryUI (for easing effects).
+
+HTML:
+<div id="rotator">
+	<img src="your-very-wide-sprite.jpg" width="3416" height="362" alt="">
+</div>
+
+CSS:
+#rotator {
+    width:854px;
+    overflow:hidden;
+}
+
+#rotator img {
+    margin-left:0px;
+}
+
+Note that the margin-left rule is NECCESARY for the function to work, do not forget it!
+
+javaScript:
+rotator('rotator img', 'jswing', 'easeInOutCirc', 2000, 500, 7500, 3416);
+
+
+That's it!
