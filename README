@@ -21,7 +21,8 @@ This script does one thing, rotates 4 images, with user supplied easing and dura
 Example usage:
 All that is needed to use this script is an image in a div with the appropriate css.
 From there simply include the script and call the function with the easing and duration
-of your choice. Please note this script does require both jQuery (for selection) and jQueryUI (for easing effects).
+of your choice. Please note this script REQUIRES both jQuery (for selection) 
+and jQueryUI (for easing effects).
 
 HTML:
 <div id="rotator">
@@ -41,7 +42,7 @@ CSS:
 Note that the margin-left rule is NECCESARY for the function to work, do not forget it!
 
 javaScript:
-rotator('rotator img', 'jswing', 'easeInOutCirc', 2000, 500, 7500, 3416);
+$('#rotator').rotator('jswing', 'easeInOutCirc', 2000, 500, 7500, 3416);
 
 
 That's it!
