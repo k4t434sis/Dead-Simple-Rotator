@@ -1,0 +1,39 @@
+#rotator {
+    width:/* set this to your viewport size */px;
+    overflow:hidden;
+}
+
+#rotator img {
+    margin-left:0px;
+}
+
+#controls {
+    position:relative;
+}
+
+#rotator-prev, #rotator-next {
+    width:50px;
+    height:50px;
+    position:absolute;
+    cursor:pointer;
+}
+
+#rotator-prev {
+    background:url('img/rotator-buttons.png') no-repeat bottom left;
+    left:/* tweak this to your liking */px;
+    top:/* tweak this to your liking */px;
+}
+
+#rotator-prev:hover {
+    background-position:bottom right;
+}
+
+#rotator-next {    
+    background:url('img/rotator-buttons.png') no-repeat top left;
+    left:/* tweak this to your liking */px;
+    top:/* tweak this to your liking */px;
+}
+
+#rotator-next:hover {
+    background-position:top right;
+}
