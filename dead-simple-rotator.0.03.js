@@ -46,17 +46,17 @@
 							    'margin-left': '-' + margins[2] + 'px',
 							  }, (duration / 2), easing);
 							break;
-						case '-854px':
+						case '-'+margins[0]+'px':
 							$('#' + div).animate({					    
 							    'margin-left': '0px',
 							  }, (duration / 2), easingLast);
 							break;
-						case '-1708px':
+						case '-'+margins[1]+'px':
 							$('#' + div).animate({					    
 							    'margin-left': '-' + margins[0] + 'px',
 							  }, (duration / 2), easing);
 							break;
-						case '-2562px':
+						case '-'+margins[2]+'px':
 							$('#' + div).animate({					    
 							    'margin-left': '-' + margins[1] + 'px',
 							  }, (duration / 2), easing);
@@ -71,17 +71,17 @@
 						    'margin-left': '-' + margins[0] + 'px',
 						  }, (duration / 2), easing);
 						break;
-					case '-854px':
+					case '-'+margins[0]+'px':
 						$('#' + div).animate({					    
 						    'margin-left': '-' + margins[1] + 'px',
 						  }, (duration / 2), easing);
 						break;
-					case '-1708px':
+					case '-'+margins[1]+'px':
 						$('#' + div).animate({					    
 						    'margin-left': '-' + margins[2] + 'px',
 						  }, (duration / 2), easingLast);
 						break;
-					case '-2562px':
+					case '-'+margins[2]+'px':
 						$('#' + div).animate({					    
 						    'margin-left': '0px',
 						  }, (duration / 2), easingLast);
